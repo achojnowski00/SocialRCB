@@ -1,0 +1,45 @@
+.dropdownForm {
+  position: absolute;
+  z-index: 1000;
+  top: 75px;
+  background-color: #e2e19a;
+  padding: 10px 20px;
+  border-radius: 10px;
+  max-width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkboxForm {
+  display: flex;
+  margin: 0 10px;
+
+  &__box {
+    display: flex;
+  }
+}
+
+.checkButton {
+  padding: 10px 20px !important;
+  margin-right: 10px;
+  border: none;
+  border-radius: 13px;
+
+  &--check {
+    background: #b3dc9c;
+    color: #317b3d;
+    border: 2px solid #317b3d;
+    &:hover {
+      background: #c0e1b1;
+    }
+  }
+
+  &--uncheck {
+    background: #ffb4b4;
+    color: #c11a1a;
+    border: 2px solid #c11a1a;
+    &:hover {
+      background: #ff8e8e;
+    }
+  }
+}

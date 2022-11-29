@@ -1,0 +1,52 @@
+.news {
+  padding: 20px;
+  margin: 20px;
+  background-color: #e6e6e6;
+  border-radius: 12px;
+  box-shadow: 0px 6px 0px #d9d9d9;
+  position: relative;
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+
+  &__shortcut {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    &:nth-of-type(1) {
+      margin-top: 20px;
+    }
+  }
+
+  &__date {
+    margin: 30px 0 0 0;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: right;
+    clear: both;
+  }
+
+  &__button {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    background: #9fc131;
+    transition: 0.15s;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+
+    &:hover {
+      background: #8ead29;
+    }
+  }
+}

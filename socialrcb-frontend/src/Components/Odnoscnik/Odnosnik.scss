@@ -1,0 +1,47 @@
+.odnosnik {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 20px 20px 20px 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.odnosnik:hover,
+.odnosnik.active {
+  background-color: #9fc131;
+  position: relative;
+}
+
+.odnosnik.header__button--logout {
+  background-color: #e1564c8a;
+  &:hover {
+    background-color: #c11a1a;
+  }
+}
+
+.odnosnik.active::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: linear-gradient(135deg, transparent, #9fc131 50%);
+  transition: 0.15s;
+}
+
+.odnosnik > a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}

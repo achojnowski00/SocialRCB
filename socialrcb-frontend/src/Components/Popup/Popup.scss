@@ -1,0 +1,33 @@
+.popupwrapper {
+  // position: absolute;
+  // top: 20%;
+  // z-index: 999;
+  margin-top: 20px;
+  .popup {
+    box-sizing: border-box;
+    width: 1220px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #cbcbcb;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+
+    &__button {
+      display: block;
+      margin: 20px auto 0 auto;
+      border: none;
+      font-size: 14px;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: 500;
+      background: #c13d31;
+      cursor: pointer;
+      transition: 0.15s;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+
+      &:hover {
+        background: #982e24;
+      }
+    }
+  }
+}
